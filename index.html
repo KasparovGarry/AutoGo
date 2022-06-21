@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon import starts -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Favicon import ends -->
+
+    <!-- Font import starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font import ends -->
+
+    <!-- Bootstrap import starts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap import ends -->
+
+    <!-- Lightslider import starts -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/lightslider-master/src/css/lightslider.css"
+    />
+    <!-- Lightslider import ends -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>АвтоGo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Авто<span class="red-letters">G</span>o
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">
+                <span class="red-letters">Горящее предложение</span>
+              </a>
+              <a class="nav-link" href="#">Кто мы?</a>
+              <a class="nav-link" href="#">Заказ авто</a>
+              <a class="nav-link" href="#">Отзывы</a>
+              <a class="nav-link phone-number" href="tel:+79166665544">
+                <img src="/icons/phone.png" alt="P" />
+                <span>+7 916 666 55 44</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-padding banner-1">
+        <div class="container">
+          <div class="text">
+            <h1>ЗАКАЗ АВТО/ПЕРЕГОН В РОССИЮ</h1>
+            <h4>Комплекс высококачестенных услуг для автомобиля</h4>
+          </div>
+          <div class="form">
+            <form action="">
+              <span>Бесплатная консультация</span>
+              <input type="text" placeholder="ИМЯ" required />
+              <input type="tel" placeholder="ТЕЛЕФОН" required />
+              <button class="btn btn-primary shadow-none" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding hot-suggestions">
+        <div class="container">
+          <h1 class="red-letters">Горящее предложение</h1>
+          <span>
+            * Машина уже на этапе ремонта и в кротчайшие сроки будет доставлена
+            вам
+          </span>
+
+          <div
+            id="carouselExampleControls"
+            class="carousel slide car-slider"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="car-card-wrapper">
+                  <div id="car1" class="car-card">
+                    <img src="/images/car-1.png" alt="" />
+                    <span>Ford Fusion SE</span>
+                  </div>
+                  <div class="car-card disabled"></div>
+                  <div class="car-card disabled"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="car-card-wrapper">
+                  <div class="car-card disabled"></div>
+                  <div class="car-card disabled"></div>
+                  <div class="car-card disabled"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="car-card-wrapper">
+                  <div class="car-card disabled"></div>
+                  <div class="car-card disabled"></div>
+                  <div class="car-card disabled"></div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="car-cards-modal">
+          <span class="close-btn">&times;</span>
+          <div id="modalCar1" class="car-card-modal">
+            <img src="/images/car-1.png" alt="" />
+            <h1>Ford Fusion SE</h1>
+            <div class="info-section">
+              <span>Цвет - серебристый</span>
+              <span>Двигатель - 2,5л</span>
+              <span>АКПП</span>
+              <span>Камера заднего вида</span>
+              <span>Привод передний</span>
+              <span>Электрозеркала с подогревом</span>
+              <span>Парктроник</span>
+              <span>Салон - ткань</span>
+            </div>
+            <span class="price">
+              Цена - <span class="red-letters">1250000 РУБ</span>
+            </span>
+            <div class="form">
+              <form action="">
+                <input type="text" placeholder="ИМЯ" required />
+                <input type="tel" placeholder="ТЕЛЕФОН" required />
+                <button class="btn btn-primary shadow-none" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding banner-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <h1>5</h1>
+              <span>лет на рынке</span>
+            </div>
+            <div class="col-md">
+              <h1>500+</h1>
+              <span>довольных клиентов</span>
+            </div>
+            <div class="col-md">
+              <h1>100%</h1>
+              <span>гарантия качества</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding benefits">
+        <div class="container">
+          <h1>Преимущества</h1>
+          <div class="row">
+            <div class="col-xl red-column">
+              <h1><span>30%</span> экономия</h1>
+              <p>
+                Стоимость автомобиля который вы приобретаете с нашей помощью
+                дешевле на 20%-30% относительно Российского рынка
+              </p>
+            </div>
+            <div class="col-xl">
+              <h1>100%</h1>
+              <p>Положительных отзывов и довольных клиентов</p>
+            </div>
+            <div class="col-xl">
+              <h1>Ремонт=качество</h1>
+              <p>Команда мастеров востановит любые повреждения и поломки</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl red-column">
+              <h1>Безопасная доставка</h1>
+              <p>
+                Автомобиль будет доставлен из Америки в любую точку удобную для
+                вас
+              </p>
+            </div>
+            <div class="col-xl">
+              <h1>VIP</h1>
+              <p>Выполнение любых видов работ, детейлинг, тюнинг и другие</p>
+            </div>
+            <div class="col-xl">
+              <h1>Пакет документов</h1>
+              <p>
+                Офомление всех необходимых документов, прохождение лабораторий
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding banner-3">
+        <div class="container">
+          <h1>Этапы работы</h1>
+          <a href="#">Консультация</a>
+        </div>
+      </section>
+
+      <section class="section-padding phases-of-work">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <img src="/icons/en.png" alt="en" />
+              <div class="text">
+                Машина выкупается и выезжает из аукциона Америки
+                <br />
+                <a href="https://www.iaai.com">https://www.iaai.com</a>
+                <a href="https://www.copart.com">https://www.copart.com</a>
+              </div>
+              <h2>ПОДБОР АВТО</h2>
+            </div>
+            <div class="col-lg">
+              <img src="/icons/am.png" alt="am" />
+              <div class="text">
+                В Армении машина проходит процедуру растоможки и ремонтных работ
+                по восстановлению авто
+              </div>
+              <h2>РАСТАМОЖКА/РЕМОНТ</h2>
+            </div>
+            <div class="col-lg">
+              <img src="/icons/ru.png" alt="ru" />
+              <div class="text">
+                В России установка “Глонасс”, прохождение лабораторий, получение
+                ПТС
+              </div>
+              <h2>ДОСТАВКА/ПТС</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding banner-4">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>ОТЗЫВЫ/РАБОТЫ</h1>
+            </div>
+            <div class="col">
+              <img src="/images/banner-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding reviews">
+        <div class="container">
+          <div class="reviews-slider">
+            <ul id="revSlider" class="cs-hidden">
+              <li class="item-a">
+                <div class="review">
+                  <div class="info">
+                    <img src="/images/review-car-1.png" alt="" />
+                    <div class="main-info">
+                      <div class="stars">
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                      </div>
+                      <span class="name">Андрей</span>
+                      <span class="date">15.03.2022</span>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    Приехала моя машина в отличном состоянии, доставили
+                    оперативно, весь комплект документов оформлен. Все супер,
+                    спасибо.
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-b">
+                <div class="review">
+                  <div class="info">
+                    <img src="/images/review-car-2.png" alt="" />
+                    <div class="main-info">
+                      <div class="stars">
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                      </div>
+                      <span class="name">Макс</span>
+                      <span class="date">17.08.2021</span>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    Машинка бомба, все как я и хотел, ждал 3 месяца, но это того
+                    стоило. Допом преобрел шикарные колеса, доволен)
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-c">
+                <div class="review">
+                  <div class="info">
+                    <img src="/images/review-car-3.png" alt="" />
+                    <div class="main-info">
+                      <div class="stars">
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                      </div>
+                      <span class="name">Кристина</span>
+                      <span class="date">01.07.2021</span>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    Большое спасибо ребятом из АВТОGО, исполнили все мои желания
+                    , в Москве такую не найти)))
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-d">
+                <div class="review">
+                  <div class="info">
+                    <img src="/images/review-car-4.png" alt="" />
+                    <div class="main-info">
+                      <div class="stars">
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                        <img src="/icons/star.png" alt="" />
+                      </div>
+                      <span class="name">Сергей</span>
+                      <span class="date">14.05.2021</span>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    Забрал машину сам, приехал в Ереван, совместил отдых и
+                    покупку авто, прекрасный город, отличная машина, всем
+                    доволен, приеду еще.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-padding">
+      <div class="container">
+        <h1>Заявка на подбор автомобиля</h1>
+        <div class="form">
+          <form action="">
+            <input type="text" placeholder="ИМЯ" required />
+            <input type="email" placeholder="E-MAIL" required />
+            <input type="text" placeholder="МОДЕЛЬ АВТО" required />
+            <input type="text" placeholder="ГОД ВЫПУСКА" required />
+            <span>*Автомобиль должен быть не старше 2016 г. выпуска</span>
+            <button class="btn btn-primary shadow-none" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap import starts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap import ends -->
+
+    <!-- Lightslider import starts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/lightslider-master/src/js/lightslider.js"></script>
+    <!-- Lighslider import ends -->
+    <script src="script.js"></script>
+  </body>
+</html>
