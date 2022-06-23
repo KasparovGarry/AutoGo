@@ -523,10 +523,6 @@ footer form span {
 }
 
 @media screen and (max-width: 576px) {
-  .navbar-dark .navbar-nav .nav-link {
-    padding: 0.5rem 0;
-  }
-
   .banner-1 {
     height: 50vh;
   }
@@ -585,12 +581,111 @@ footer form span {
     font-size: 32px;
   }
 
-  .benefits .row:nth-child(1) {
-    margin-bottom: 15px;
+  .banner-3 h1 {
+    font-size: 40px;
   }
 
-  .benefits .row .col-xl {
-    margin-bottom: 15px;
+  .banner-3 a {
+    font-size: 18px;
+  }
+
+  .banner-4 img {
+    height: 250px;
+  }
+
+  .reviews .review {
+    width: 325px;
+    height: 270px;
+  }
+
+  .reviews .review .info > img {
+    width: 178px;
+  }
+
+  .reviews .review .comment {
+    font-size: 14px;
+  }
+
+  .reviews .review .info .main-info .stars {
+    margin-bottom: 5px;
+  }
+
+  .reviews .review .info .main-info span {
+    font-size: 12px;
+  }
+
+  .reviews .review .stars img {
+    height: auto;
+    width: 8px;
+  }
+
+  footer h1 {
+    font-size: 26px;
+    margin-bottom: 45px;
+  }
+
+  footer form input {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner-1 {
+    height: 100vh;
+  }
+
+  .banner-1 .container {
+    padding-top: 45px;
+  }
+
+  .banner-1 h1 {
+    font-size: 22px;
+  }
+
+  .banner-1 h4 {
+    font-size: 16px;
+  }
+
+  .banner-1 .form form {
+    padding-top: 45px;
+  }
+
+  .banner-1 .form form span {
+    font-size: 14px;
+  }
+
+  .banner-1 .form form input {
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+  }
+
+  .hot-suggestions .car-card {
+    width: 155px;
+    height: 145px;
+    padding: 10px;
+  }
+
+  .hot-suggestions .car-card img {
+    width: 130px;
+  }
+
+  .hot-suggestions .car-card span {
+    font-size: 18px;
+  }
+
+  .banner-2 .container .col-md h1 {
+    font-size: 38px;
+  }
+
+  .banner-2 .container .col-md span {
+    font-size: 20px;
+  }
+
+  .benefits .container > h1 {
+    font-size: 32px;
   }
 
   .banner-3 h1 {
@@ -641,13 +736,58 @@ footer form span {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  banner-1 h1 {
+    font-size: 30px;
+  }
+
+  .banner-1 h4 {
+    font-size: 22px;
+  }
+
+  .banner-1 .form form span {
+    font-size: 20px;
+  }
+
+  .banner-1 .form form input {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+  }
+
+  .hot-suggestions .car-card {
+    width: 215px;
+    height: 195px;
+    padding: 20px;
+  }
+
+  .hot-suggestions .car-card img {
+    width: 185px;
+  }
+
+  .hot-suggestions .car-card span {
+    font-size: 22px;
+  }
+
+  footer h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .banner-2 .container .col-md {
     margin-bottom: 15px;
+    border-right: none;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+  }
+
   h1 {
     text-align: center;
   }
@@ -666,5 +806,15 @@ footer form span {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .benefits .row:nth-child(1) {
+    margin-bottom: 15px;
+  }
+
+  .benefits .row .col-xl {
+    margin-bottom: 15px;
   }
 }
