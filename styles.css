@@ -540,19 +540,20 @@ footer form span {
   }
 
   .banner-1 .form form {
-    padding-top: 30px;
+    padding-top: 15px;
   }
 
   .banner-1 .form form span {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .banner-1 .form form input {
-    font-size: 12px;
+    font-size: 10px;
+    margin-bottom: 5px;
   }
 
   .btn-primary {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .hot-suggestions .car-card {
@@ -570,17 +571,21 @@ footer form span {
   }
 
   .car-cards-modal .car-card-modal {
-    width: 290px;
-    height: 630px;
+    width: 260px;
+    height: 465px;
     padding: 15px;
   }
 
   .car-cards-modal .car-card-modal img {
-    width: 200px;
+    width: 130px;
   }
 
   .car-cards-modal .car-card-modal h1 {
-    font-size: 24px;
+    font-size: 16px;
+  }
+
+  .car-cards-modal .car-card-modal .info-section {
+    font-size: 12px;
   }
 
   .car-cards-modal .car-card-modal .price {
@@ -593,11 +598,11 @@ footer form span {
   }
 
   .banner-2 .container .col-md h1 {
-    font-size: 38px;
+    font-size: 22px;
   }
 
   .banner-2 .container .col-md span {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .benefits .container > h1 {
@@ -824,7 +829,7 @@ footer form span {
 
 @media screen and (max-width: 767px) {
   .banner-2 .container .col-md {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-right: none;
   }
 }
