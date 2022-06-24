@@ -107,7 +107,7 @@ header .navbar .collapse {
 
 .banner-1 .form form {
   max-width: 320px;
-  padding-top: 35vh;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
 }
@@ -245,7 +245,7 @@ form input::placeholder {
   display: none;
   flex-direction: column;
   width: 450px;
-  height: 770px;
+  height: 700px;
   padding: 30px;
   background: linear-gradient(
     180deg,
@@ -262,13 +262,13 @@ form input::placeholder {
   display: flex;
   align-self: center;
   height: auto;
-  width: 400px;
+  width: 350px;
   object-fit: cover;
 }
 
 .car-cards-modal .car-card-modal h1 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .car-cards-modal .car-card-modal .info-section {
@@ -278,7 +278,7 @@ form input::placeholder {
 }
 
 .car-cards-modal .car-card-modal .price {
-  margin: 15px 0;
+  margin: 5px 0;
   font-size: 18px;
   font-weight: 500;
 }
@@ -569,6 +569,29 @@ footer form span {
     font-size: 10px;
   }
 
+  .car-cards-modal .car-card-modal {
+    width: 290px;
+    height: 630px;
+    padding: 15px;
+  }
+
+  .car-cards-modal .car-card-modal img {
+    width: 200px;
+  }
+
+  .car-cards-modal .car-card-modal h1 {
+    font-size: 24px;
+  }
+
+  .car-cards-modal .car-card-modal .price {
+    margin: 7px 0;
+  }
+
+  .car-cards-modal .close-btn {
+    top: 30px;
+    right: 15px;
+  }
+
   .banner-2 .container .col-md h1 {
     font-size: 38px;
   }
@@ -674,6 +697,29 @@ footer form span {
 
   .hot-suggestions .car-card span {
     font-size: 18px;
+  }
+
+  .car-cards-modal .car-card-modal {
+    width: 395px;
+    height: 670px;
+    padding: 30px;
+  }
+
+  .car-cards-modal .car-card-modal img {
+    width: 315px;
+  }
+
+  .car-cards-modal .car-card-modal h1 {
+    font-size: 28px;
+  }
+
+  .car-cards-modal .car-card-modal .price {
+    margin: 7px 0;
+  }
+
+  .car-cards-modal .close-btn {
+    top: 30px;
+    right: 15px;
   }
 
   .banner-2 .container .col-md h1 {
@@ -802,10 +848,36 @@ footer form span {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .hot-suggestions .car-card {
+    width: 295px;
+  }
+
+  .hot-suggestions .car-card img {
+    width: 265px;
+  }
+
+  .car-cards-modal .car-card-modal {
+    height: 715px;
+    padding: 15px;
+  }
+
+  .car-cards-modal .car-card-modal .price {
+    margin: 7px 0;
+  }
+
+  .car-cards-modal .close-btn {
+    top: 30px;
+    right: 15px;
+  }
+
+  form input {
+    margin-bottom: 7px;
   }
 }
 
