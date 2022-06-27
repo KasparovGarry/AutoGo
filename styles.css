@@ -616,6 +616,10 @@ footer form span {
     font-size: 18px;
   }
 
+  .phases-of-work .row .col-lg img {
+    height: 150px;
+  }
+
   .banner-4 h1 {
     font-size: 36px;
   }
@@ -868,8 +872,13 @@ footer form span {
   footer h1 {
     text-align: left;
   }
+
   .section-padding {
     padding: 45px 0;
+  }
+
+  .phases-of-work .col-lg {
+    margin-bottom: 30px;
   }
 }
 
